@@ -1,0 +1,9 @@
+﻿ul 
+{
+    list-style:none;
+}
+.complete-task
+{
+    text-decoration:line-through;
+    color:grey;
+}

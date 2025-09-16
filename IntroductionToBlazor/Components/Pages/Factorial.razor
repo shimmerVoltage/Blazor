@@ -4,17 +4,3 @@
 <h3>Factorial</h3>
 
 <input type="number" name="factorial" min="0" max="20" @bind="n" @onclick="Calculate"/><label for="factorial" style="font-size:24px">! = @fact</label>
-
-@code 
-{
-	int n = 0;
-	long fact = 1;
-	void Calculate()
-	{
-		fact = 1;
-		for (int i = 1; i <= n; i++)
-		{
-			fact *= i;
-		}
-	}
-}
