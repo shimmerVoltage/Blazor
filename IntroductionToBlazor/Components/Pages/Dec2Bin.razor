@@ -1,0 +1,16 @@
+﻿@page "/dec2Bin"
+
+@rendermode InteractiveServer
+
+<PageTitle>Dec2Bin</PageTitle>
+
+<h3>Dec2Bin</h3>
+
+<input 
+	type="number" 
+	name="dec2Bin" 
+	min="0" 
+	max="999" 
+	@bind="dec" 
+	@onclick="Cunvert" />
+<label>  => @bin</label>

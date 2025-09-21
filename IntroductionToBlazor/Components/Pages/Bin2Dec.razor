@@ -1,0 +1,14 @@
+﻿@page "/bin2Dec"
+
+@rendermode InteractiveServer
+
+<PageTitle>Bin2Dec</PageTitle>
+
+<h3>Bin2Dec</h3>
+
+<input type="text"
+       value="@bin"
+       @oninput="OnBinInput"
+       pattern="[01]*" />
+<label> => @dec</label>
+
