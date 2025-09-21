@@ -17,10 +17,13 @@ namespace IntroductionToBlazor.Components.Pages
         }
         void Cunvert()
         {
-            dec = bin
-            .Select((c, index) => new { Digit = c, Position = bin.Length - index - 1 })
-            .Where(x => x.Digit == '1')
-            .Sum(x => (int)Math.Pow(2, x.Position));
+            if (bin.Length < 10)
+            {
+                dec = bin
+                .Select((c, index) => new { Digit = c, Position = bin.Length - index - 1 })
+                .Where(x => x.Digit == '1')
+                .Sum(x => (int)Math.Pow(2, x.Position));
+            }
         }
     }
 }
