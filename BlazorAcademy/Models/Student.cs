@@ -3,13 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BlazorAcademy.Models
 {
-    public class Direction
+    public class Student:Human
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public byte direction_id { get; set; }
+        public int stud_id { get; set; }
         [Required]
-        public string direction_name { get; set; }
-        
+        public int group {  get; set; }
     }
 }
